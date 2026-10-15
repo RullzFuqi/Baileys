@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="test/title.jpg" alt="Yuki Baileys banner" width="100%" />
+<img src="test/title.jpg" alt="RullzFuqi Baileys banner" width="100%" />
 
 <br/>
 
-# ❄️ Yuki Baileys
+# ❄️ RullzFuqi Baileys
 
 **A modern WhatsApp Web API for Node.js, built on Itsukichann's Baileys mod and carried forward.**
 
@@ -34,19 +34,18 @@
 
 ## ✨ About
 
-Yuki Baileys is a socket-based WhatsApp Web client for Node.js. It talks to WhatsApp directly over a **WebSocket**, so there is no Selenium, no headless Chromium, and no half a gigabyte of RAM spent on a browser.
+RullzFuqi Baileys is a socket-based WhatsApp Web client for Node.js. It talks to WhatsApp directly over a **WebSocket**, so there is no Selenium, no headless Chromium, and no half a gigabyte of RAM spent on a browser.
 
 This project continues the **Baileys mod by [Itsukichann](https://github.com/Itsukichann/Baileys)**. The original author was asked for permission to keep modifying and developing it, and agreed. Their work is the foundation here, and their credit and MIT copyright notice stay in this repository.
 
 > [!NOTE]
-> Yuki Baileys keeps the mod-style features of the Itsukichann version (buttons, interactive messages, albums, status mentions, and more) and updates the internals so it works as a first-class citizen in modern Node.js projects.
+> RullzFuqi Baileys keeps the mod-style features of the Itsukichann version (buttons, interactive messages, albums, status mentions, and more) and updates the internals so it works as a first-class citizen in modern Node.js projects.
 
 ## 🚀 Features
 
 | | |
 |---|---|
 | 🔐 **Multi-device login** | QR code or **pairing code** (with optional custom code), session saved with `useMultiFileAuthState` |
-| 💬 **Rich messages** | Text, quoted, mentions, forwards, reactions, polls, events, location, contacts, pins |
 | 🎛️ **Mod message types** | Buttons, lists, cards, templates, interactive (native flow), PIX/PAY, shop & collection, album, status mentions, AI icon |
 | 🖼️ **Media** | Image, video, audio (with waveform), documents, stickers; upload, download, re-upload |
 | 👥 **Groups & communities** | Metadata, participants, invites, settings, community helpers |
@@ -187,14 +186,14 @@ Compared with the Itsukichann version this project started from:
 
 ### 🧭 Status
 
-Yuki Baileys is a work in progress. It has been checked for syntax and for the specific fixes above, but not every WhatsApp feature has been verified against the live service. Newer upstream protocol features (for example privacy tokens and some LID handling) are still being studied and ported carefully rather than copied blindly. If something misbehaves, please open an issue with logs (with credentials removed).
+RullzFuqi Baileys is a work in progress. It has been checked for syntax and for the specific fixes above, but not every WhatsApp feature has been verified against the live service. Newer upstream protocol features (for example privacy tokens and some LID handling) are still being studied and ported carefully rather than copied blindly. If something misbehaves, please open an issue with logs (with credentials removed).
 
 ## 📚 API guide
 
 The full guide below covers connecting, sessions, events, every message type, chats, groups, privacy and more. Examples use a socket variable named `yuki`.
 
 > [!NOTE]
-> Links to `baileys.whiskeysockets.io` point at the upstream type documentation, which is still a useful reference for config and event shapes. Yuki Baileys keeps its own mod APIs documented in this guide.
+> Links to `baileys.whiskeysockets.io` point at the upstream type documentation, which is still a useful reference for config and event shapes. RullzFuqi Baileys keeps its own mod APIs documented in this guide.
 
 
 ### Index
@@ -2719,7 +2718,7 @@ yuki.ws.on('CB:edge_routing,id:abcd,routing_info', (node: BinaryNode) => { })
 ## 🙏 Credits
 
 - **[Itsukichann](https://github.com/Itsukichann/Baileys)**: author of the Baileys mod this project is based on. Modification and continued development are done with their permission. All of their original work remains theirs.
-- **[RullzFuqi](https://github.com/RullzFuqi)**: maintainer of Yuki Baileys, continuing development.
+- **[RullzFuqi](https://github.com/RullzFuqi)**: maintainer of RullzFuqi Baileys, continuing development.
 - **[WhiskeySockets/Baileys](https://github.com/WhiskeySockets/Baileys)** and the original Baileys by **[Adhiraj Singh (@adiwajshing)](https://github.com/adiwajshing)**: the library everything here descends from. The newer WhiskeySockets code was used as a reference implementation for compatibility work.
 - Thanks to [@pokearaujo](https://github.com/pokearaujo/multidevice) for his observations on WhatsApp Multi-Device, to [@Sigalor](https://github.com/sigalor/whatsapp-web-reveng) for his notes on WhatsApp Web, and to [@Rhymen](https://github.com/Rhymen/go-whatsapp/) for the Go implementation.
 
